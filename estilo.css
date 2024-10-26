@@ -228,14 +228,33 @@ button:hover {
     color: black;
 }
 
+/* Contenedor para centrar y ajustar el nombre */
+.contenedor-nombre {
+    display: flex;
+    justify-content: center; /* Centra el texto horizontalmente */
+    align-items: center;
+    overflow: hidden; /* Evita que el contenido se desborde */
+}
+
+/* Estilo del nombre en cursiva */
 .nombre {
     font-family: 'Allura', cursive;
-    font-size: 2.4em;
+    font-size: 2.4em; /* Tamaño original del texto */
     margin-bottom: 30px;
     color: black;
-    font-weight: normal;
-    white-space: nowrap; /* Mantiene el texto en una sola línea */
+    font-weight: normal; /* Mantiene el peso original de Allura */
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    overflow: hidden; /* Oculta cualquier texto que desborde el contenedor */
+    text-overflow: ellipsis; /* Añade puntos suspensivos si el texto se corta */
 }
+
+/* Ajuste del tamaño para pantallas pequeñas */
+@media (max-width: 600px) { /* Ajusta el ancho según el tamaño deseado */
+    .nombre {
+        font-size: 2em; /* Reduce ligeramente el tamaño en móviles */
+    }
+}
+
 
 
 /* Imagen superior */
