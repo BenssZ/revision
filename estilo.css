@@ -1,13 +1,22 @@
 /* Estilos generales */
+/* Asegura que el contenido no se desborde horizontalmente */
 body {
     font-family: 'Georgia', serif;
-    font-weight: 200; /* Ajusta el peso a un valor más delgado */
+    font-weight: 200;
     color: #5a5a5a;
     margin: 0;
     padding: 0;
-    background-image: url('fotos/fondoli.PNG'); /* Ruta de tu imagen de patrón */
-    background-repeat: repeat; /* Repite la imagen de fondo */
-    background-size: 65%; /* Mantiene el tamaño original de la imagen */
+    background-image: url('fotos/fondoli.PNG');
+    background-repeat: repeat;
+    background-size: 65%;
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+}
+
+/* Aplica box-sizing a todos los elementos para un mejor control del ancho */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
 /* Encabezado */
@@ -237,15 +246,21 @@ button:hover {
 }
 
 /* Estilo del nombre en cursiva */
+/* Estilo del nombre en cursiva */
 .nombre {
     font-family: 'Allura', cursive;
-    font-size: 2.4em; /* Tamaño original del texto */
+    font-size: 2.4em;
     margin-bottom: 30px;
     color: black;
-    font-weight: normal; /* Mantiene el peso original de Allura */
+    font-weight: normal;
     white-space: nowrap; /* Evita que el texto se divida en varias líneas */
-    overflow: hidden; /* Oculta cualquier texto que desborde el contenedor */
-    text-overflow: ellipsis; /* Añade puntos suspensivos si el texto se corta */
+}
+
+/* Asegura que el contenedor principal no se desborde */
+.contenedor-principal {
+    max-width: 100vw; /* Limita el ancho al 100% de la vista */
+    overflow-x: hidden; /* Evita cualquier desbordamiento horizontal */
+    padding: 0 10px; /* Agrega padding para que el contenido no toque los bordes */
 }
 
 /* Ajuste del tamaño para pantallas pequeñas */
