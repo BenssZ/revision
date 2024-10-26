@@ -254,6 +254,7 @@ button:hover {
     color: black;
     font-weight: normal;
     white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    margin: 0.5px 0; /* Reduce el espacio vertical entre los nombres */
 }
 
 /* Asegura que el contenedor principal no se desborde */
