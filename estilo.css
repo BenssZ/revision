@@ -1,0 +1,318 @@
+/* Estilos generales */
+body {
+    font-family: 'Georgia', serif;
+    font-weight: 200; /* Ajusta el peso a un valor más delgado */
+    color: #5a5a5a;
+    margin: 0;
+    padding: 0;
+    background-image: url('fotos/fondoli.PNG'); /* Ruta de tu imagen de patrón */
+    background-repeat: repeat; /* Repite la imagen de fondo */
+    background-size: 65%; /* Mantiene el tamaño original de la imagen */
+}
+
+/* Encabezado */
+header {
+    position: relative;
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 2px solid #b59d89;
+    z-index: 1;
+}
+
+/* Texto del encabezado */
+.texto-header {
+    position: relative;
+    z-index: 1;
+    color: black; /* Efecto dorado */
+    font-weight: 200; /* Peso más delgado */
+}
+/* Texto del encabezado */
+.texheader {
+    position: relative;
+    z-index: 1;
+    color: black; /* Efecto dorado */
+    font-weight: 100; /* Peso más delgado */
+     font-size: 1.5em;
+}
+
+/* Título con la fuente Allura */
+.titulo-allura {
+    font-family: 'Allura', cursive; /* Fuente Allura solo para este título */
+    font-size: 4em; /* Aumenta el tamaño del título */
+    margin: 0;
+    padding: 10px;
+    font-weight: 200; /* Mantiene el peso original de Allura */
+}
+
+/* Imagen con el recorte en arco invertido */
+.imagen-header {
+    position: relative;
+    overflow: hidden;
+}
+
+.imagen-header img {
+    width: 100%;
+    height: auto;
+   
+    transition: transform 0.3s;
+}
+
+.imagen-header img:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
+}
+
+/* Secciones generales */
+section {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.2); 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s;
+    color: black;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+/* Estilos para el texto de los títulos */
+h2 {
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 2px solid #b59d89;
+    padding-bottom: 10px;
+    font-weight: 300; /* Peso más delgado */
+}
+
+/* Listas */
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    font-weight: 300; /* Peso más delgado */
+}
+
+li {
+    font-size: 1.5em;
+    margin: 10px 0;
+    position: relative;
+    font-weight: 300; /* Peso más delgado */
+}
+
+li::before {
+    content: "•";
+    color: #b59d89;
+    font-size: 1.5em;
+    position: absolute;
+    left: -25px;
+}
+
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+input, select, button {
+    padding: 15px;
+    font-size: 1.2em;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: border 0.3s;
+    font-weight: 300; /* Peso más delgado */
+}
+
+input:focus, select:focus {
+    border: 2px solid #b59d89;
+    outline: none;
+}
+
+button {
+    background-color: #b59d89;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-size: 1.2em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #a08976;
+    transform: translateY(-2px);
+}
+
+/* Botones */
+.boton-regalos, .boton-maps {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #b59d89;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+    font-weight: 300; /* Peso más delgado */
+}
+
+.boton-regalos:hover, .boton-maps:hover {
+    background-color: #a08976;
+    transform: translateY(-2px);
+}
+
+/* Imágenes */
+.seccion-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.seccion-img:hover {
+    transform: scale(1.05);
+}
+
+/* Contador */
+#contador {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #b59d89;
+    text-align: center;
+    padding: 10px;
+    border: 3px solid #b59d89;
+    border-radius: 10px;
+    display: inline-block;
+    background-color: #fff;
+    margin: 20px auto;
+}
+
+/* Nombres de los novios */
+.nombres-novios h1 {
+    font-family: 'Allura', cursive;
+    font-size: 2em;
+    color: darkgray;
+    text-align: center;
+    margin: 20px 0;
+    font-weight: normal; /* Mantiene el peso original de Allura */
+}
+
+/* Frase */
+.frase h2 {
+    font-size: 1.2em;
+    text-align: center;
+    margin: 20px 0;
+    color: black;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    font-weight: 300; /* Peso más delgado */
+}
+
+/* Estilos para la sección de dedicatoria */
+#dedicatoria {
+    text-align: center;
+    margin: 40px auto;
+    padding: 40px 20px;
+    max-width: 900px;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    color: black;
+}
+
+/* Estilo de nombre en cursiva */
+.nombre {
+    font-family: 'Allura', cursive;
+    font-size: 2.4em;
+    margin-bottom: 30px;
+    color: black;
+    font-weight: normal; /* Mantiene el peso original de Allura */
+}
+
+/* Imagen superior */
+.imagen-superior {
+    width: 40%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Imágenes inferiores */
+.imagen-inferior {
+    width: 20%;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+}
+
+/* Estilos para la sección de padres */
+#padres {
+    text-align: center;
+    margin: 40px auto;
+    padding: 40px 20px;
+    max-width: 900px;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    color: black;
+}
+
+/* Estilos para la imagen */
+.imagen {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.seccion-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.seccion-img:hover {
+    transform: scale(1.05);
+}
+
+#playPauseBtn {
+    font-size: 2em;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: #5a5a5a;
+}
+
+audio {
+    display: none;
+}
+
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+.corner-image {
+    position: absolute;
+    width: 100px; /* Ajusta el tamaño según tus necesidades */
+    height: auto;
+}
+
+.corner-left {
+    top: 10px; /* Ajusta el valor para posicionar */
+    left: 10px;
+}
+
+.corner-right {
+    top: 10px;
+    right: 10px;
+}
+
