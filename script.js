@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
             playPauseBtn.textContent = '|۔|'; // Cambia a símbolo de pausa
         } else {
             audio.pause();
-            playPauseBtn.textContent = '▶︎•'; // Cambia a símbolo de play
+            playPauseBtn.textContent = '▶︎•،'; // Cambia a símbolo de play
         }
     });
 
