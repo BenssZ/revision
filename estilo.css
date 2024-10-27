@@ -368,9 +368,4 @@ audio {
     right: 10px;
 }
 
-.contenedor-boton {
-    display: flex;
-    justify-content: center;
-    margin-top: 1px; /* Ajusta según el espacio que desees arriba */
-}
 
