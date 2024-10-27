@@ -371,7 +371,6 @@ audio {
 .contenedor-boton {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh; /* Centra verticalmente en toda la ventana */
+    margin-top: 20px; /* Ajusta según el espacio que desees arriba */
 }
 
