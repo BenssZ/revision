@@ -368,3 +368,9 @@ audio {
     right: 10px;
 }
 
+.contenedor-boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Centra verticalmente en toda la ventana */
+}
