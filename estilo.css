@@ -10,6 +10,11 @@ body {
     background-repeat: repeat;
     background-size: 65%;
     overflow-x: hidden; /* Evita el desplazamiento horizontal */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Centra verticalmente en toda la ventana */
+    margin: 0;     /* Elimina los márgenes */
 }
 
 /* Aplica box-sizing a todos los elementos para un mejor control del ancho */
@@ -368,9 +373,3 @@ audio {
     right: 10px;
 }
 
-.contenedor-boton {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Centra verticalmente en toda la ventana */
-}
