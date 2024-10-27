@@ -319,17 +319,23 @@ button:hover {
 }
 
 #playPauseBtn {
-    font-size: 2em;
-    background-color: white; /* Fondo blanco para el círculo */
-    border: none;
-    cursor: pointer;
-    outline: none;
-    color: #5a5a5a;
-    border-radius: 30%; /* Hace que el fondo sea circular */
-    padding: 5px; /* Añade espacio alrededor del símbolo */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Sombra suave para resaltar */
-    transition: transform 0.2s ease; /* Transición suave */
+    font-size: 1.5em;        /* Tamaño del símbolo Play */
+    width: 60px;             /* Ancho igual al alto para mantener el círculo */
+    height: 60px;            /* Alto igual al ancho para mantener el círculo */
+    padding: 0;              /* Elimina padding adicional */
+    background-color: white; /* Color de fondo del botón */
+    border: none;            /* Sin borde adicional */
+    cursor: pointer;         /* Cambia el cursor al pasar el ratón */
+    outline: none;           /* Sin borde de enfoque */
+    color: #5a5a5a;          /* Color del símbolo */
+    border-radius: 50%;      /* Convierte en círculo perfecto */
+    display: flex;           /* Centra el símbolo Play */
+    align-items: center;     /* Centrado vertical */
+    justify-content: center; /* Centrado horizontal */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Sombra */
+    transition: transform 0.2s ease; /* Animación */
 }
+
 
 #playPauseBtn:hover {
     transform: scale(1.1); /* Aumenta ligeramente el tamaño al pasar el mouse */
