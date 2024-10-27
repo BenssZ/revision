@@ -326,7 +326,7 @@ button:hover {
     outline: none;
     color: #5a5a5a;
     border-radius: 50%; /* Hace que el fondo sea circular */
-    padding: 15px; /* Añade espacio alrededor del símbolo */
+    padding: 5px; /* Añade espacio alrededor del símbolo */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Sombra suave para resaltar */
     transition: transform 0.2s ease; /* Transición suave */
 }
